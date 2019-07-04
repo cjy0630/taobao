@@ -68,7 +68,7 @@ def get_comment_api():
 
 def get_now_settings():
     rcp = RawConfigParser()
-    rcp.read("taobao\config\settings.cfg")
+    rcp.read("taobao/config/settings.cfg")
     section = rcp.sections()[0]
 
     for item in rcp.items(section):
