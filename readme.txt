@@ -4,7 +4,7 @@
 由于本程序仅为简单测试数据获取，并未进行去重处理，也并未将数据进行持久化。
 如需通过去重实现断点续爬及数据持久化，后续可结合数据库进行开发，如：scrapy-redis或MySQL或MongoDB或Redis+MySQL或Redis+MongoDB
 
-程序中的我自己的cookie已经删掉，如需运行程序请先设置自己的cookie，本程序可以通过两种方法来设置Cookie：
+程序中我自己的cookie已经删掉，如需运行程序请先设置自己的cookie，本程序可以通过两种方法来设置Cookie：
 1、直接修改配置文件（config/settings.cfg）中的cookie
 2、运行run.py，通过引导菜单设置Cookie
 
