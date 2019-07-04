@@ -2340,3 +2340,131 @@
 2019-07-04 20:55:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=50>
 {'rate_content': '爸爸喜欢', 'rate_date': '2018-11-13 12:49:04'}
 2019-07-04 20:55:21 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 2 pages/min), scraped 569 items (at 40 items/min)
+2019-07-04 20:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=32> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '老公讲是真酒，正品，可以，物流快', 'rate_date': '2018-11-12 23:20:00'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': 'OK', 'rate_date': '2018-11-12 18:57:22'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '没说的 天猫超市值的信赖', 'rate_date': '2018-11-12 09:39:25'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '酒还没喝，但快递员拽得跟个二五八似的，有没有管管？',
+ 'rate_date': '2018-11-11 13:57:26'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '酒是正品，但是日期很新。放些日子吧。服务还是一流。方便快捷。实惠。还有小礼品。快递很给力。第二天就到。很满意。首选必须滴。',
+ 'rate_date': '2018-11-07 11:04:25'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '给老丈人喝的，自己不喝酒，不清楚真假，反正打开里面是这样的',
+ 'rate_date': '2018-11-04 16:17:48'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '好，价格便宜，送货快，晚上下单，转天上午就送到。', 'rate_date': '2018-11-02 12:25:58'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '还行', 'rate_date': '2018-11-01 11:04:45'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '满意', 'rate_date': '2018-10-29 11:43:41'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '买回来就尝了一点，不错，喝在口里，酸甜苦辣都有', 'rate_date': '2018-10-29 09:33:59'}
+2019-07-04 20:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=51>
+{'rate_content': '不错一天收到', 'rate_date': '2018-10-28 18:39:41'}
+2019-07-04 20:56:16 [scrapy.extensions.logstats] INFO: Crawled 67 pages (at 1 pages/min), scraped 580 items (at 11 items/min)
+2019-07-04 20:56:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=33> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 20:57:26 [scrapy.extensions.logstats] INFO: Crawled 68 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 20:57:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=34> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 20:58:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=35> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 20:58:20 [scrapy.extensions.logstats] INFO: Crawled 70 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 20:58:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=36> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 20:59:05 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 20:59:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=37> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:00:23 [scrapy.extensions.logstats] INFO: Crawled 72 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=38> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:01:15 [scrapy.extensions.logstats] INFO: Crawled 73 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:01:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=39> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:02:20 [scrapy.extensions.logstats] INFO: Crawled 74 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=40> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=41> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:03:16 [scrapy.extensions.logstats] INFO: Crawled 76 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:03:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=42> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:04:21 [scrapy.extensions.logstats] INFO: Crawled 77 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:04:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=43> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:05:19 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:05:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567337356805&sellerId=3374363109&currentPage=44> (referer: https://item.taobao.com/item.htm?id=567337356805&ns=1&abbucket=17#detail)
+2019-07-04 21:06:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=594195898639&sellerId=3951324456&currentPage=47> (referer: https://item.taobao.com/item.htm?id=594195898639&ns=1&abbucket=17#detail)
+2019-07-04 21:06:24 [scrapy.extensions.logstats] INFO: Crawled 80 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:06:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=594195898639&sellerId=3951324456&currentPage=48> (referer: https://item.taobao.com/item.htm?id=594195898639&ns=1&abbucket=17#detail)
+2019-07-04 21:07:15 [scrapy.extensions.logstats] INFO: Crawled 81 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:07:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=585488541205&sellerId=3538683476&currentPage=48> (referer: https://detail.tmall.com/item.htm?id=585488541205&ns=1&abbucket=17)
+2019-07-04 21:08:19 [scrapy.extensions.logstats] INFO: Crawled 82 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:08:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=585488541205&sellerId=3538683476&currentPage=49> (referer: https://detail.tmall.com/item.htm?id=585488541205&ns=1&abbucket=17)
+2019-07-04 21:09:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=585488541205&sellerId=3538683476&currentPage=50> (referer: https://detail.tmall.com/item.htm?id=585488541205&ns=1&abbucket=17)
+2019-07-04 21:09:24 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:09:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=585488541205&sellerId=3538683476&currentPage=51> (referer: https://detail.tmall.com/item.htm?id=585488541205&ns=1&abbucket=17)
+2019-07-04 21:10:25 [scrapy.extensions.logstats] INFO: Crawled 85 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=585488541205&sellerId=3538683476&currentPage=52> (referer: https://detail.tmall.com/item.htm?id=585488541205&ns=1&abbucket=17)
+2019-07-04 21:11:21 [scrapy.extensions.logstats] INFO: Crawled 86 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=565464554239&sellerId=3538683476&currentPage=56> (referer: https://detail.tmall.com/item.htm?id=565464554239&ns=1&abbucket=17)
+2019-07-04 21:12:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=565464554239&sellerId=3538683476&currentPage=57> (referer: https://detail.tmall.com/item.htm?id=565464554239&ns=1&abbucket=17)
+2019-07-04 21:12:17 [scrapy.extensions.logstats] INFO: Crawled 88 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:12:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=588534449065&sellerId=2372282777&currentPage=58> (referer: https://item.taobao.com/item.htm?id=588534449065&ns=1&abbucket=17#detail)
+2019-07-04 21:13:07 [scrapy.extensions.logstats] INFO: Crawled 89 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:13:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=584660659848&sellerId=726984974&currentPage=62> (referer: https://detail.tmall.com/item.htm?id=584660659848&ns=1&abbucket=17)
+2019-07-04 21:14:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=584660659848&sellerId=726984974&currentPage=63> (referer: https://detail.tmall.com/item.htm?id=584660659848&ns=1&abbucket=17)
+2019-07-04 21:14:20 [scrapy.extensions.logstats] INFO: Crawled 91 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=584660659848&sellerId=726984974&currentPage=64> (referer: https://detail.tmall.com/item.htm?id=584660659848&ns=1&abbucket=17)
+2019-07-04 21:15:13 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=595671929568&sellerId=4157913492&currentPage=65> (referer: https://detail.tmall.com/item.htm?id=595671929568&ns=1&abbucket=17)
+2019-07-04 21:16:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=595671929568&sellerId=4157913492&currentPage=66> (referer: https://detail.tmall.com/item.htm?id=595671929568&ns=1&abbucket=17)
+2019-07-04 21:16:14 [scrapy.extensions.logstats] INFO: Crawled 94 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=522580248338&sellerId=1757702284&currentPage=66> (referer: https://detail.tmall.com/item.htm?id=522580248338&ns=1&abbucket=17)
+2019-07-04 21:17:23 [scrapy.extensions.logstats] INFO: Crawled 95 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:17:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=522580248338&sellerId=1757702284&currentPage=67> (referer: https://detail.tmall.com/item.htm?id=522580248338&ns=1&abbucket=17)
+2019-07-04 21:18:05 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:18:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=522580248338&sellerId=1757702284&currentPage=68> (referer: https://detail.tmall.com/item.htm?id=522580248338&ns=1&abbucket=17)
+2019-07-04 21:19:21 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:19:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=522580248338&sellerId=1757702284&currentPage=69> (referer: https://detail.tmall.com/item.htm?id=522580248338&ns=1&abbucket=17)
+2019-07-04 21:20:19 [scrapy.extensions.logstats] INFO: Crawled 98 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:20:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=522580248338&sellerId=1757702284&currentPage=70> (referer: https://detail.tmall.com/item.htm?id=522580248338&ns=1&abbucket=17)
+2019-07-04 21:21:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=522580248338&sellerId=1757702284&currentPage=71> (referer: https://detail.tmall.com/item.htm?id=522580248338&ns=1&abbucket=17)
+2019-07-04 21:21:19 [scrapy.extensions.logstats] INFO: Crawled 100 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:21:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=590032989622&sellerId=2945301954&currentPage=72> (referer: https://item.taobao.com/item.htm?id=590032989622&ns=1&abbucket=17#detail)
+2019-07-04 21:22:14 [scrapy.extensions.logstats] INFO: Crawled 101 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:22:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567472543416&sellerId=1819644072&currentPage=77> (referer: https://detail.tmall.com/item.htm?id=567472543416&ns=1&abbucket=17)
+2019-07-04 21:23:11 [scrapy.extensions.logstats] INFO: Crawled 102 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:23:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567472543416&sellerId=1819644072&currentPage=78> (referer: https://detail.tmall.com/item.htm?id=567472543416&ns=1&abbucket=17)
+2019-07-04 21:24:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567472543416&sellerId=1819644072&currentPage=79> (referer: https://detail.tmall.com/item.htm?id=567472543416&ns=1&abbucket=17)
+2019-07-04 21:24:20 [scrapy.extensions.logstats] INFO: Crawled 104 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:24:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567472543416&sellerId=1819644072&currentPage=80> (referer: https://detail.tmall.com/item.htm?id=567472543416&ns=1&abbucket=17)
+2019-07-04 21:25:13 [scrapy.extensions.logstats] INFO: Crawled 105 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:25:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=567472543416&sellerId=1819644072&currentPage=81> (referer: https://detail.tmall.com/item.htm?id=567472543416&ns=1&abbucket=17)
+2019-07-04 21:26:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=564328106212&sellerId=1819644072&currentPage=81> (referer: https://detail.tmall.com/item.htm?id=564328106212&ns=1&abbucket=17)
+2019-07-04 21:26:20 [scrapy.extensions.logstats] INFO: Crawled 107 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=564328106212&sellerId=1819644072&currentPage=82> (referer: https://detail.tmall.com/item.htm?id=564328106212&ns=1&abbucket=17)
+2019-07-04 21:27:24 [scrapy.extensions.logstats] INFO: Crawled 108 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:27:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=596867018691&sellerId=570460963&currentPage=87> (referer: https://detail.tmall.com/item.htm?id=596867018691&ns=1&abbucket=17)
+2019-07-04 21:28:24 [scrapy.extensions.logstats] INFO: Crawled 109 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=596867018691&sellerId=570460963&currentPage=88> (referer: https://detail.tmall.com/item.htm?id=596867018691&ns=1&abbucket=17)
+2019-07-04 21:29:23 [scrapy.extensions.logstats] INFO: Crawled 110 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:29:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=596867018691&sellerId=570460963&currentPage=89> (referer: https://detail.tmall.com/item.htm?id=596867018691&ns=1&abbucket=17)
+2019-07-04 21:30:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=596867018691&sellerId=570460963&currentPage=90> (referer: https://detail.tmall.com/item.htm?id=596867018691&ns=1&abbucket=17)
+2019-07-04 21:30:20 [scrapy.extensions.logstats] INFO: Crawled 112 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:30:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=595680145848&sellerId=570460963&currentPage=93> (referer: https://detail.tmall.com/item.htm?id=595680145848&ns=1&abbucket=17)
+2019-07-04 21:31:22 [scrapy.extensions.logstats] INFO: Crawled 113 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=581801951203&sellerId=2424331111&currentPage=98> (referer: https://item.taobao.com/item.htm?id=581801951203&ns=1&abbucket=17#detail)
+2019-07-04 21:32:22 [scrapy.extensions.logstats] INFO: Crawled 114 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:32:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=581801951203&sellerId=2424331111&currentPage=99> (referer: https://item.taobao.com/item.htm?id=581801951203&ns=1&abbucket=17#detail)
+2019-07-04 21:33:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=581801951203&sellerId=2424331111&currentPage=100> (referer: https://item.taobao.com/item.htm?id=581801951203&ns=1&abbucket=17#detail)
+2019-07-04 21:33:21 [scrapy.extensions.logstats] INFO: Crawled 116 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:34:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=581801951203&sellerId=2424331111&currentPage=101> (referer: https://item.taobao.com/item.htm?id=581801951203&ns=1&abbucket=17#detail)
+2019-07-04 21:34:30 [scrapy.extensions.logstats] INFO: Crawled 117 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:34:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=581801951203&sellerId=2424331111&currentPage=102> (referer: https://item.taobao.com/item.htm?id=581801951203&ns=1&abbucket=17#detail)
+2019-07-04 21:35:12 [scrapy.extensions.logstats] INFO: Crawled 118 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:35:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=581801951203&sellerId=2424331111&currentPage=103> (referer: https://item.taobao.com/item.htm?id=581801951203&ns=1&abbucket=17#detail)
+2019-07-04 21:36:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=109> (referer: https://detail.tmall.com/item.htm?id=578383498997&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=17)
+2019-07-04 21:36:22 [scrapy.extensions.logstats] INFO: Crawled 120 pages (at 2 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:37:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=110> (referer: https://detail.tmall.com/item.htm?id=578383498997&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=17)
+2019-07-04 21:37:26 [scrapy.extensions.logstats] INFO: Crawled 121 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:37:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=111> (referer: https://detail.tmall.com/item.htm?id=578383498997&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=17)
+2019-07-04 21:38:18 [scrapy.extensions.logstats] INFO: Crawled 122 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:38:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=112> (referer: https://detail.tmall.com/item.htm?id=578383498997&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=17)
+2019-07-04 21:39:19 [scrapy.extensions.logstats] INFO: Crawled 123 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
+2019-07-04 21:39:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rate.tmall.com/list_detail_rate.htm?itemId=578383498997&sellerId=725677994&currentPage=113> (referer: https://detail.tmall.com/item.htm?id=578383498997&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=17)
+2019-07-04 21:40:17 [scrapy.extensions.logstats] INFO: Crawled 124 pages (at 1 pages/min), scraped 580 items (at 0 items/min)
