@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd8b363-291a-40ff-8a4a-87aaaa3b1a4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao/spiders/alcohol.py" beforeDir="false" afterPath="$PROJECT_DIR$/taobao/spiders/alcohol.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taobao/spiders/alcohol.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+            <state relative-caret-position="956">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -25,10 +24,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taobao/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
+            <state relative-caret-position="595">
               <caret line="97" selection-start-line="97" selection-end-line="103" selection-end-column="19" />
             </state>
           </provider>
@@ -65,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -91,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taobao/config/settings.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -100,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taobao/config/config_operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="804">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
@@ -126,18 +125,18 @@
         <option value="$PROJECT_DIR$/taobao/items.py" />
         <option value="$PROJECT_DIR$/taobao/unit/show_info.py" />
         <option value="$PROJECT_DIR$/taobao/unit/input_validation.py" />
-        <option value="$PROJECT_DIR$/taobao/config/settings.cfg" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/taobao/config/config_operate.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/taobao/config/config_operate.py" />
+        <option value="$PROJECT_DIR$/taobao/config/settings.cfg" />
         <option value="$PROJECT_DIR$/taobao/spiders/alcohol.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1715" />
-    <option name="y" value="45" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1688" />
+    <option name="y" value="17" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -337,15 +336,28 @@
       <option name="project" value="LOCAL" />
       <updated>1562306085806</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1562319365258</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562319365258</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1562320787116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562320787116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67838000" />
+    <option name="totallyTimeSpent" value="69160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="9" width="1696" height="1026" extended-state="1" />
-    <editor active="true" />
+    <frame x="-1688" y="17" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -437,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taobao/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="97" selection-start-line="97" selection-end-line="103" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taobao/unit/show_info.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -454,7 +459,7 @@
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -472,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taobao/config/settings.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -488,18 +486,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/taobao/config/config_operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="804">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taobao/spiders/alcohol.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+        <state relative-caret-position="956">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/config/settings.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="97" selection-start-line="97" selection-end-line="103" selection-end-column="19" />
         </state>
       </provider>
     </entry>

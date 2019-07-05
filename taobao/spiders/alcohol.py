@@ -64,7 +64,6 @@ class AlcoholSpider(scrapy.Spider):
                 'referer': get_search_api() + get_keyword()
             }
             search_url = get_search_api() + get_keyword() + '&s=' + str(self.offset)
-            print(get_crawl_page())
             if self.offset <= get_crawl_page() * 44:
                 yield scrapy.Request(search_url, headers=headers, callback=self.parse, dont_filter=True)
                 self.count += 1
@@ -83,26 +82,29 @@ class AlcoholSpider(scrapy.Spider):
         user_id = response.meta['user_id']
         title = response.meta['title']
 
-        data = response.text.split('(')
-        data1 = ''
-        for num in range(1, len(data)):
-            data1 += data[num]
-        data = data1.strip(')')
-        data = json.loads(data)
-        datas = data['rateDetail']['rateList']
-        for data in datas:
-            rate_content = data['rateContent']
-            rate_date = data['rateDate']
-            print('商品ID：%s  商家ID：%s  评价内容：%s  评价时间：%s' % (item_id, user_id, rate_content, rate_date))
-            item['keyword'] = get_keyword()
-            item['item_id'] = item_id
-            item['user_id'] = user_id
-            item['title'] = title
-            item['rate_content'] = rate_content
-            item['rate_date'] = rate_date
-            self.comment_count += 1
-            yield item
-        self.page += 1
-        if self.page <= get_comment_page():
-            comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(self.page)
-            yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
+        try:
+            data = response.text.split('(')
+            data1 = ''
+            for num in range(1, len(data)):
+                data1 += data[num]
+            data = data1.strip(')')
+            data = json.loads(data)
+            datas = data['rateDetail']['rateList']
+            for data in datas:
+                rate_content = data['rateContent']
+                rate_date = data['rateDate']
+                print('商品ID：%s  商家ID：%s  评价内容：%s  评价时间：%s' % (item_id, user_id, rate_content, rate_date))
+                item['keyword'] = get_keyword()
+                item['item_id'] = item_id
+                item['user_id'] = user_id
+                item['title'] = title
+                item['rate_content'] = rate_content
+                item['rate_date'] = rate_date
+                self.comment_count += 1
+                yield item
+            self.page += 1
+            if self.page <= get_comment_page():
+                comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(self.page)
+                yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
+        except json.decoder.JSONDecodeError as e:
+            print('滑动验证出现了')
