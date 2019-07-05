@@ -12,10 +12,6 @@ from taobao.items import TaobaoItem
 class AlcoholSpider(scrapy.Spider):
     name = 'alcohol'
     # allowed_domains = ['taobao.com']
-    flag = 0
-    page_num = 1
-    comment_flag = 0
-
     offset = 0
     count = 1
     page = 0
@@ -74,7 +70,10 @@ class AlcoholSpider(scrapy.Spider):
             time.sleep(random.randint(1, 5))
         except Exception as e:
             error = e
-            print('爬取结束共%d页' % (self.count - 1))
+            print('爬取结束，共%d页商品' % (self.count - 1))
+        except json.decoder.JSONDecodeError:
+            print('滑动验证出现了')
+            print('解决方案：\n1、设置代理IP池，使用随机IP访问\n2、设置cookie池，使用随机cookie访问\n3、打开浏览器滑动一下重新复制并替换cookie')
 
     def parse_comment(self, response):
         """
@@ -111,7 +110,7 @@ class AlcoholSpider(scrapy.Spider):
             time.sleep(random.randint(1, 5))
         except Exception as e:
             error = e
-            print('%s的所有评价爬取完成' % item_id)
+            print('%s的所有评价爬取完成' % response.meta['item_id'])
         except json.decoder.JSONDecodeError:
             print('滑动验证出现了')
             print('解决方案：\n1、设置代理IP池，使用随机IP访问\n2、设置cookie池，使用随机cookie访问\n3、打开浏览器滑动一下重新复制并替换cookie')
