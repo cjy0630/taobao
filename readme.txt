@@ -1,10 +1,16 @@
-此版本已经将数据以并发的形式持久化到本地mysql
+此版本修复了一些BUG并已经将数据以并发的形式持久化到本地mysql
 运行前请先设置settings.py文件中的
 MYSQL_HOST = ""
 MYSQL_PORT = 
 MYSQL_DBNAME = ""
 MYSQL_USER = ""
 MYSQL_PASSWORD = ""
+
+已去除BUG：上一版本每件商品只爬取到1页评论，第二页开始报错
+BUG原因：爬取评论递归时漏写了meta参数
+修改位置：taobao/spiders/alcohol.py中的parse_comment(self, response)函数
+上一版本：yield scrapy.Request(comment_url, headers=headers, callback=self.parse_comment, dont_filter=True)
+本次修复后：yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
 
 由于本程序仅用于测试，未使用任何需要付费的反爬措施，为避免触发滑动验证甚至封号，程序运行时间较长！
 经过测试发现淘宝评论的反爬机制是滑动验证，同一ip短时间内多次访问相同url很容易触发滑动验证。
