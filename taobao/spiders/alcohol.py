@@ -40,32 +40,36 @@ class AlcoholSpider(scrapy.Spider):
             title: 商品标题
             url: 商品评价API
         """
-        data = response.css('script::text').extract()[3].split('\n')[2].strip()[16:].strip(';')
-        data = json.loads(data)
-        datas = data['mods']['itemlist']['data']['auctions']
+        try:
+            data = response.css('script::text').extract()[3].split('\n')[2].strip()[16:].strip(';')
+            data = json.loads(data)
+            datas = data['mods']['itemlist']['data']['auctions']
 
-        for data in datas:
-            item_id = data['nid']
-            user_id = data['user_id']
-            title = data['raw_title']
-            url = 'https:' + data['detail_url']
-            comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=1'
+            for data in datas:
+                item_id = data['nid']
+                user_id = data['user_id']
+                title = data['raw_title']
+                url = 'https:' + data['detail_url']
+                comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=1'
+                cookie = get_cookie()
+                headers = {
+                    'cookie': cookie,
+                    'referer': url
+                }
+                yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
+            self.offset += 44
             cookie = get_cookie()
             headers = {
                 'cookie': cookie,
-                'referer': url
+                'referer': get_search_api() + get_keyword()
             }
-            yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
-        self.offset += 44
-        cookie = get_cookie()
-        headers = {
-            'cookie': cookie,
-            'referer': get_search_api() + get_keyword()
-        }
-        search_url = get_search_api() + get_keyword() + '&s=' + str(self.offset)
-        if self.offset <= get_crawl_page() * 44:
-            yield scrapy.Request(search_url, headers=headers, callback=self.parse, dont_filter=True)
-            self.count += 1
+            search_url = get_search_api() + get_keyword() + '&s=' + str(self.offset)
+            print(get_crawl_page())
+            if self.offset <= get_crawl_page() * 44:
+                yield scrapy.Request(search_url, headers=headers, callback=self.parse, dont_filter=True)
+                self.count += 1
+        except json.decoder.JSONDecodeError as e:
+            print('滑动验证出现了')
 
     def parse_comment(self, response):
         """
