@@ -73,3 +73,35 @@ def get_now_settings():
 
     for item in rcp.items(section):
         print(item[0] + '：' + item[1])
+
+
+def set_crawl_page(new_crawl_page):
+    rcp = RawConfigParser()
+    rcp.read("taobao/config/settings.cfg")
+    rcp.set('my_settings', 'crawl_page', new_crawl_page)
+    with open('taobao/config/settings.cfg', 'w') as f:
+        rcp.write(f)
+
+
+def get_crawl_page():
+    rcp = RawConfigParser()
+    rcp.read("taobao/config/settings.cfg")
+    section = rcp.sections()[0]
+    new_crawl_page = rcp.items(section)[4][1]
+    return new_crawl_page
+
+
+def set_comment_page(new_comment_page):
+    rcp = RawConfigParser()
+    rcp.read("taobao/config/settings.cfg")
+    rcp.set('my_settings', 'comment_page', new_comment_page)
+    with open('taobao/config/settings.cfg', 'w') as f:
+        rcp.write(f)
+
+
+def get_comment_page():
+    rcp = RawConfigParser()
+    rcp.read("taobao/config/settings.cfg")
+    section = rcp.sections()[0]
+    comment_page = rcp.items(section)[5][1]
+    return comment_page
