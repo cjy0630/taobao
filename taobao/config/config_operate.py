@@ -87,8 +87,8 @@ def get_crawl_page():
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     section = rcp.sections()[0]
-    new_crawl_page = rcp.items(section)[4][1]
-    return new_crawl_page
+    crawl_page = int(rcp.items(section)[4][1])
+    return crawl_page
 
 
 def set_comment_page(new_comment_page):
@@ -103,5 +103,18 @@ def get_comment_page():
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     section = rcp.sections()[0]
-    comment_page = rcp.items(section)[5][1]
+    comment_page = int(rcp.items(section)[5][1])
     return comment_page
+
+
+def initialization():
+    rcp = RawConfigParser()
+    rcp.read("taobao/config/settings.cfg")
+    rcp.set('my_settings', 'cookie', '')
+    rcp.set('my_settings', 'keyword', '')
+    rcp.set('my_settings', 'search_api', 'https://s.taobao.com/search?q=')
+    rcp.set('my_settings', 'comment_api', 'https://rate.tmall.com/list_detail_rate.htm?itemId=')
+    rcp.set('my_settings', 'crawl_page', '100')
+    rcp.set('my_settings', 'comment_page', '8')
+    with open('taobao/config/settings.cfg', 'w') as f:
+        rcp.write(f)
