@@ -57,7 +57,7 @@ class AlcoholSpider(scrapy.Spider):
                     'cookie': cookie,
                     'referer': url
                 }
-                yield scrapy.Request(comment_url, headers=headers, meta={'referer': url, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
+                yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
             self.offset += 44
             cookie = get_cookie()
             headers = {
@@ -82,6 +82,10 @@ class AlcoholSpider(scrapy.Spider):
         :return: item（把获取到的数据传到scrapy的items中，由scrapy的pipelines进行处理）
         """
         item = TaobaoItem()
+        headers = response.meta['headers']
+        item_id = response.meta['item_id']
+        user_id = response.meta['user_id']
+        title = response.meta['title']
         try:
             data = response.text.split('(')
             data1 = ''
@@ -91,9 +95,6 @@ class AlcoholSpider(scrapy.Spider):
             data = json.loads(data)
             datas = data['rateDetail']['rateList']
             for data in datas:
-                item_id = response.meta['item_id']
-                user_id = response.meta['user_id']
-                title = response.meta['title']
                 rate_content = data['rateContent']
                 rate_date = data['rateDate']
                 print('商品ID：%s  商家ID：%s  评价内容：%s  评价时间：%s' % (item_id, user_id, rate_content, rate_date))
@@ -106,15 +107,10 @@ class AlcoholSpider(scrapy.Spider):
                 self.comment_count += 1
                 yield item
             self.page += 1
-            cookie = get_cookie()
-            headers = {
-                'cookie': cookie,
-                'referer': response.meta['referer']
-            }
             item_id = response.meta['item_id']
             user_id = response.meta['user_id']
             comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(self.page)
-            yield scrapy.Request(comment_url, headers=headers, callback=self.parse_comment, dont_filter=True)
+            yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
             time.sleep(random.randint(1, 5))
         except Exception as e:
             error = e
