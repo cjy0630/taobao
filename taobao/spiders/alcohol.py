@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
+
 import json
 
 import scrapy
 
 from taobao.config.config_operate import get_cookie, get_search_api, get_keyword, get_comment_api, get_crawl_page, \
     get_comment_page
-from taobao.items import TaobaoItem
+from taobao.items import TaobaoItem, GrabRecordsItem
+from taobao.unit.converter import to_md5
+from taobao.unit.removal import removal
 
 
 class AlcoholSpider(scrapy.Spider):
@@ -56,6 +59,10 @@ class AlcoholSpider(scrapy.Spider):
                     'cookie': cookie,
                     'referer': url
                 }
+                page_num = 1
+                while removal(to_md5(comment_url)) == 1:
+                    page_num += 1
+                    comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(page_num)
                 yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
             self.offset += 44
             cookie = get_cookie()
@@ -77,10 +84,12 @@ class AlcoholSpider(scrapy.Spider):
         :return: item（把获取到的数据传到scrapy的items中，由scrapy的pipelines进行处理）
         """
         item = TaobaoItem()
+        grab_records_item = GrabRecordsItem()
         headers = response.meta['headers']
         item_id = response.meta['item_id']
         user_id = response.meta['user_id']
         title = response.meta['title']
+        grab_url = response.url
 
         try:
             data = response.text.split('(')
@@ -90,6 +99,10 @@ class AlcoholSpider(scrapy.Spider):
             data = data1.strip(')')
             data = json.loads(data)
             datas = data['rateDetail']['rateList']
+            grab_records_item['grab_id'] = to_md5(grab_url)
+            grab_records_item['title'] = title
+            grab_records_item['grab_url'] = grab_url
+            yield grab_records_item
             for data in datas:
                 rate_content = data['rateContent']
                 rate_date = data['rateDate']
@@ -105,6 +118,7 @@ class AlcoholSpider(scrapy.Spider):
             self.page += 1
             if self.page <= get_comment_page():
                 comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(self.page)
-                yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
+                if removal(to_md5(comment_url)) == 0:
+                    yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
         except json.decoder.JSONDecodeError as e:
             print('滑动验证出现了')

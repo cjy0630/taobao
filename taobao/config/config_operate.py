@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 from configparser import RawConfigParser
 
 
@@ -14,7 +15,7 @@ def set_cookie(new_cookie):
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     rcp.set('my_settings', 'cookie', new_cookie)
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
 
 
@@ -22,7 +23,7 @@ def set_search_api(new_search_api):
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     rcp.set('my_settings', 'search_api', new_search_api)
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
 
 
@@ -38,7 +39,7 @@ def set_keyword(new_keyword):
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     rcp.set('my_settings', 'keyword', new_keyword)
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
 
 
@@ -54,7 +55,7 @@ def set_comment_api(new_comment_api):
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     rcp.set('my_settings', 'comment_api', new_comment_api)
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
 
 
@@ -79,7 +80,7 @@ def set_crawl_page(new_crawl_page):
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     rcp.set('my_settings', 'crawl_page', new_crawl_page)
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
 
 
@@ -95,7 +96,7 @@ def set_comment_page(new_comment_page):
     rcp = RawConfigParser()
     rcp.read("taobao/config/settings.cfg")
     rcp.set('my_settings', 'comment_page', new_comment_page)
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
 
 
@@ -116,5 +117,17 @@ def initialization():
     rcp.set('my_settings', 'comment_api', 'https://rate.tmall.com/list_detail_rate.htm?itemId=')
     rcp.set('my_settings', 'crawl_page', '100')
     rcp.set('my_settings', 'comment_page', '8')
-    with open('taobao/config/settings.cfg', 'w', encoding='utf-8') as f:
+    with open('taobao/config/settings.cfg', 'w') as f:
         rcp.write(f)
+
+
+def get_db_settings():
+    rcp = RawConfigParser()
+    rcp.read("taobao/config/settings.cfg")
+    section = rcp.sections()[1]
+    host = rcp.items(section)[0][1]
+    port = int(rcp.items(section)[1][1])
+    user = rcp.items(section)[2][1]
+    passwd = rcp.items(section)[3][1]
+    db = rcp.items(section)[4][1]
+    return host, port, user, passwd, db
