@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcd8b363-291a-40ff-8a4a-87aaaa3b1a4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/taobao/unit/converter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao/unit/removal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao/config/config_operate.py" beforeDir="false" afterPath="$PROJECT_DIR$/taobao/config/config_operate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao/config/settings.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/taobao/config/settings.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao/spiders/alcohol.py" beforeDir="false" afterPath="$PROJECT_DIR$/taobao/spiders/alcohol.py" afterDir="false" />
-    </list>
+    <list default="true" id="dcd8b363-291a-40ff-8a4a-87aaaa3b1a4e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taobao/config/config_operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="133" selection-start-line="133" selection-end-line="133" />
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="9" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -100,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taobao/unit/converter.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -135,8 +128,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1688" />
-    <option name="y" value="17" />
+    <option name="x" value="1912" />
+    <option name="y" value="30" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -187,9 +180,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/taobao/unit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CJY\MyProjects\taobao\taobao\unit" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,7 +313,7 @@
       <workItem from="1562207472828" duration="41405000" />
       <workItem from="1562283268995" duration="4723000" />
       <workItem from="1562383183430" duration="2019000" />
-      <workItem from="1562405297454" duration="703000" />
+      <workItem from="1562405297454" duration="1944000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1562288626206</created>
@@ -373,11 +371,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562325139790</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1562415259560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562415259560</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73837000" />
+    <option name="totallyTimeSpent" value="75078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="17" width="1696" height="1026" extended-state="6" />
@@ -542,18 +547,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taobao/unit/converter.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/taobao/config/config_operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="9" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobao/unit/converter.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

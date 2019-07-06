@@ -8,7 +8,7 @@ from taobao.config.config_operate import get_cookie, get_search_api, get_keyword
     get_comment_page
 from taobao.items import TaobaoItem, GrabRecordsItem
 from taobao.unit.converter import to_md5
-from taobao.unit.removal import removal
+from taobao.unit.removal import removal_grab_records
 
 
 class AlcoholSpider(scrapy.Spider):
@@ -60,7 +60,7 @@ class AlcoholSpider(scrapy.Spider):
                     'referer': url
                 }
                 page_num = 1
-                while removal(to_md5(comment_url)) == 1:
+                while removal_grab_records(to_md5(comment_url)) == 1:
                     page_num += 1
                     comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(page_num)
                 yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
@@ -106,11 +106,14 @@ class AlcoholSpider(scrapy.Spider):
             for data in datas:
                 rate_content = data['rateContent']
                 rate_date = data['rateDate']
-                print('商品ID：%s  商家ID：%s  评价内容：%s  评价时间：%s' % (item_id, user_id, rate_content, rate_date))
+                display_user_nick = data['displayUserNick']
+                print('商品ID：%s  商家ID：%s  评价人：%s  评价内容：%s  评价时间：%s' % (item_id, user_id, display_user_nick, rate_content, rate_date))
+                item['comment_id'] = to_md5(item_id + user_id + display_user_nick + rate_content + rate_date)
                 item['keyword'] = get_keyword()
                 item['item_id'] = item_id
                 item['user_id'] = user_id
                 item['title'] = title
+                item['comment_user'] = display_user_nick
                 item['rate_content'] = rate_content
                 item['rate_date'] = rate_date
                 self.comment_count += 1
@@ -118,7 +121,7 @@ class AlcoholSpider(scrapy.Spider):
             self.page += 1
             if self.page <= get_comment_page():
                 comment_url = get_comment_api() + item_id + '&sellerId=' + user_id + '&currentPage=' + str(self.page)
-                if removal(to_md5(comment_url)) == 0:
+                if removal_grab_records(to_md5(comment_url)) == 0:
                     yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
         except json.decoder.JSONDecodeError as e:
             print('滑动验证出现了')
