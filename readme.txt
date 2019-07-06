@@ -1,3 +1,13 @@
+2019/07/06更新：本次更新加入了去重功能，程序可以断点续爬
+新增模块：converter.py  removal.py
+converter.py用于各种转换，如：md5  unicode，当前版本仅编写了md5功能
+removal.py用于进行重复验证，实现去重功能，在向服务器发送请求前进行验证，如果已爬取过则不会向服务器发起请求
+新增数据库表：grab_records
+此表用于记录商品评论页
+配合新添加的模块对spiders/alcohol.py  config/config_operate.py  items.py  pipelines.py  config/settings.cfg中的代码进行了修改
+========================================================================================================================================
+
+更新：
 此版本修复了一些BUG并已经将数据以并发的形式持久化到本地mysql
 运行前请先设置settings.py文件中的
 MYSQL_HOST = ""
@@ -11,6 +21,8 @@ BUG原因：爬取评论递归时漏写了meta参数
 修改位置：taobao/spiders/alcohol.py中的parse_comment(self, response)函数
 上一版本：yield scrapy.Request(comment_url, headers=headers, callback=self.parse_comment, dont_filter=True)
 本次修复后：yield scrapy.Request(comment_url, headers=headers, meta={'headers': headers, 'item_id': item_id, 'user_id': user_id, 'title': title}, callback=self.parse_comment, dont_filter=True)
+
+========================================================================================================================================
 
 由于本程序仅用于测试，未使用任何需要付费的反爬措施，为避免触发滑动验证甚至封号，程序运行时间较长！
 经过测试发现淘宝评论的反爬机制是滑动验证，同一ip短时间内多次访问相同url很容易触发滑动验证。
