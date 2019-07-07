@@ -65,7 +65,7 @@
 
 运行程序
 -------
-第一次得到本程序时配置文件中[my_settings]部分的cookie、keyword和[db_settings]部分的passwd均为空，需进行设置后才可正常运行本程序。
+第一次得到本程序时配置文件中[my_settings]部分的cookie、keyword和[db_settings]部分的passwd以及settings.py文件中尾部的MySQL相关设置均为空，需进行设置后才可正常运行本程序。
 
 有两种方式可以对配置文件进行设置
 
@@ -74,6 +74,8 @@
 2、运行run.py文件，根据控制台菜单选择相应功能进行设置
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/settings_menu.png)
+
+3、修改settings.py文件尾部的MySQL设置，填写自己的数据库信息
 
 作者
 ---
