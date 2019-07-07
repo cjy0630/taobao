@@ -8,7 +8,7 @@ removal.py用于进行重复验证，实现去重功能，在向服务器发送�
 此表用于记录商品评论页
 配合新添加的模块对spiders/alcohol.py  config/config_operate.py  items.py  pipelines.py  config/settings.cfg中的代码进行了修改
 
-![image](https://github.com/Jack-Cherish/Pictures/blob/master/jd.gif)
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
 
 下一版本预计功能：
 1、根据需求动态创建爬虫
