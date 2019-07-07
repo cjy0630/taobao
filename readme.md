@@ -134,7 +134,7 @@
 
 unit/pipelines.py用于分割多个商品，调用spiders_factory以商品名称创建爬虫
 
-unit/spiders_factory.py模块是一个爬虫模板，用于根据搜索关键词自动创建爬虫，爬虫以搜索关键词命名
+unit/spiders_factory.py模块是自己制作的一个爬虫模板，用于根据搜索关键词自动创建爬虫，爬虫以搜索关键词命名
 
 commands/crawlall.py用于多爬虫同步运行
 
@@ -144,6 +144,8 @@ commands/crawlall.py用于多爬虫同步运行
 效果预览：
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider3.gif)
+
+彩蛋！：即便scrapy项目下没有任何爬虫，也可使用本程序自动创建出适用于目前淘宝的商品评价爬虫！只需要输入商品关键词而已，剩下的一切工作本程序将自动为你完成，完全不用写任何的爬虫代码！
 
 下一版本功能预告：
 
