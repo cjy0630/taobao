@@ -45,6 +45,8 @@
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/anaconda_download.png)
 
+安装过程此处不赘述
+
 2、官网下载MySQL
 
 下载地址：https://dev.mysql.com/downloads/mysql/
@@ -52,6 +54,8 @@
 根据操作系统下载对应的版本
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/mysql_download.png)
+
+安装过程此处不赘述，注意：安装时设置好密码，如需远程跨域写入数据需对用户进行权限设置，否则写入时会被数据库拒绝。
 
 
 2019/07/06更新：
