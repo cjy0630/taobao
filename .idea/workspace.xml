@@ -165,24 +165,6 @@
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -200,6 +182,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CJY\MyProjects\taobao\taobao\images" />
       <recent name="C:\Users\CJY\MyProjects\taobao\taobao\unit" />
     </key>
   </component>
@@ -329,7 +312,7 @@
       <workItem from="1562383183430" duration="2019000" />
       <workItem from="1562405297454" duration="1944000" />
       <workItem from="1562435450153" duration="783000" />
-      <workItem from="1562464658636" duration="599000" />
+      <workItem from="1562464658636" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1562288626206</created>
@@ -401,14 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562435585492</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <created>1562469809016</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562469809016</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76460000" />
+    <option name="totallyTimeSpent" value="76819000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="30" width="1696" height="1026" extended-state="7" />
+    <frame x="1912" y="30" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
