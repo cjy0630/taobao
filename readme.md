@@ -1,3 +1,45 @@
+淘宝商品评价爬虫
+===============
+输入要爬取的商品后自动爬取相关商品评论，数据异步持久化至MySQL数据库，支持增量爬取。
+
+效果预览：
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
+
+上手指南
+=======
+为使程序使用更加灵活，该程序通过配置文件对爬虫进行了各种爬取设置，可以在爬取前根据控制台菜单选项进行各种设置。
+
+当前版本功能及可设置项目：
+
+1、搜索指定商品
+
+2、显示当前设置
+
+3、设置Cookie
+
+4、修改搜索商品API
+
+5、修改获取评论API
+
+6、设置爬取页数
+
+7、初始化配置
+
+以下指南将帮助你正确的使用该程序。
+
+安装要求
+-------
+1、Anaconda3
+
+2、MySQL
+
+3、Scrapy
+
+安装步骤
+-------
+1、官网下载Anaconda3
+
+下载地址：https://www.anaconda.com/distribution/
 
 2019/07/06更新：
 本次更新加入了去重功能，程序可以断点续爬
@@ -8,7 +50,7 @@ removal.py用于进行重复验证，实现去重功能，在向服务器发送�
 此表用于记录商品评论页
 配合新添加的模块对spiders/alcohol.py  config/config_operate.py  items.py  pipelines.py  config/settings.cfg中的代码进行了修改
 
-![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
+
 
 下一版本预计功能：
 1、根据需求动态创建爬虫
