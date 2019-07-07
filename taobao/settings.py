@@ -102,3 +102,5 @@ MYSQL_PORT = 3307
 MYSQL_DBNAME = "taobao"
 MYSQL_USER = "root"
 MYSQL_PASSWORD = ""
+
+COMMANDS_MODULE = 'taobao.commands'
