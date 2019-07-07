@@ -1,6 +1,7 @@
 淘宝商品评价爬虫
 ===============
 输入要爬取的商品后自动爬取相关商品评论，数据异步持久化至MySQL数据库，支持增量爬取。
+
 效果预览：
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
 
