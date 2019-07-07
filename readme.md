@@ -6,6 +6,7 @@
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/database_taobao_grab_records.png)
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/database_taobao_comment.png)
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider2.gif)
 
 上手指南
 =======
