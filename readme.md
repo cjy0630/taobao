@@ -65,6 +65,10 @@
 
 运行程序
 -------
+第一步：在MySQL中执行database/create_db.sql脚本创建数据库及数据表
+
+第二步：设置爬虫
+
 第一次得到本程序时配置文件中[my_settings]部分的cookie、keyword和[db_settings]部分的passwd以及settings.py文件中尾部的MySQL相关设置均为空，需进行设置后才可正常运行本程序。
 
 有两种方式可以对配置文件进行设置
@@ -75,16 +79,19 @@
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/settings_menu.png)
 
-3、修改settings.py文件尾部的MySQL设置，填写自己的数据库信息
+第三步：修改settings.py文件尾部的MySQL设置，填写自己的数据库信息
 
 说明
 ---
 本程序目前仅用于测试，并未使用任何需要付费的反爬措施，爬取页数有限，登陆是使用Cookie模拟登陆，需要先使用浏览器进行登陆并复制Cookie。
+
 如需改善可使用代理IP创建代理池、创建Cookie池等方法，进行抓取时随机选择代理IP及随机选择Cookie发出请求。
+
+出于效率及资源消耗问题考虑，本程序未使用Selenium，并且在后续更新中也将尽量避免或巧妙使用Selenium。
 
 如果爬取中提示出现了滑动验证，可先尝试更换cookie解决问题。
 
-后续版本将逐渐更新自动登陆功能
+后续版本将更新自动登陆功能。
 
 作者
 ---
