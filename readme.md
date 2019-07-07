@@ -57,6 +57,21 @@
 
 安装过程此处不赘述，注意：安装时设置好密码，如需远程跨域写入数据需对用户进行权限设置，否则写入时会被数据库拒绝。
 
+3、安装Scrapy
+打开命令行输入pip install scrapy进行安装
+如安装遇到问题请进行环境变量设置，也可使用Anaconda Prompt进行安装，同样输入pip install scrapy进行安装。
+
+运行程序
+-------
+第一次得到本程序时配置文件中[my_settings]部分的cookie、keyword和[db_settings]部分的passwd均为空，需进行设置后才可正常运行本程序。
+
+有两种方式可以对配置文件进行设置
+
+1、直接修改config/settings.cfg文件进行设置
+
+2、运行run.py文件，根据控制台菜单选择相应功能进行设置
+
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/settings_menu.png)
 
 2019/07/06更新：
 本次更新加入了去重功能，程序可以断点续爬
