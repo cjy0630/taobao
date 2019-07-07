@@ -75,6 +75,10 @@
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/settings_menu.png)
 
+作者
+---
+崔佳毅（Jiayi Cui）
+
 2019/07/06更新：
 本次更新加入了去重功能，程序可以断点续爬
 新增模块：converter.py  removal.py
