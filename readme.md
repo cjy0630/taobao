@@ -124,6 +124,10 @@
 
 2、动态创建爬虫
 
+进行多商品爬取时会根据输入的商品关键词自动创建多个爬虫（每个商品创建一个爬虫），爬虫创建完毕会自动开始同步运行。
+
+本次更新功能如遇bug也并不影响单商品爬取及设置功能。
+
 新增模块：unit/pipelines.py  unit/spiders_factory.py  commands/crawlall.py
 
 unit/pipelines.py用于分割多个商品，调用spiders_factory以商品名称创建爬虫
@@ -138,6 +142,14 @@ commands/crawlall.py用于多爬虫同步运行
 效果预览：
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider3.gif)
+
+下一版本功能预告：
+
+1、优化多商品爬取模块
+
+2、爬虫管理
+
+
 
 2019/07/06更新
 --------------
@@ -157,7 +169,7 @@ removal.py用于进行重复验证，实现去重功能，在向服务器发送�
 
 
 
-下一版本预计功能：
+下一版本功能预告：
 
 1、根据需求动态创建爬虫
 
