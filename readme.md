@@ -2,7 +2,7 @@
 ===============
 输入要爬取的商品后自动爬取相关商品评论，数据异步持久化至MySQL数据库，支持增量爬取。
 
-本程序不定时更新，最新功能请参见下方的“更新”栏目中的信息。
+本程序不定时更新，最新功能请参见下方的“版本更新”栏目中的信息。
 
 基础效果预览：
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
