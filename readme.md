@@ -116,6 +116,29 @@
 版本更新
 =======
 
+2019/07/07更新
+--------------
+新增功能：
+
+1、多商品爬取
+
+2、动态创建爬虫
+
+新增模块：unit/pipelines.py  unit/spiders_factory.py  commands/crawlall.py
+
+unit/pipelines.py用于分割多个商品，调用spiders_factory以商品名称创建爬虫
+
+unit/spiders_factory.py模块是一个爬虫模板，用于根据搜索关键词自动创建爬虫，爬虫以搜索关键词命名
+
+commands/crawlall.py用于多爬虫同步运行
+
+备注：由于当前版本仍未使用需要付费的反爬策略，同时多爬虫运行时出现滑动验证的几率较大，但新增的功能可以正常使用，且无重大bug。
+      本程序新增功能尽量采用模块化设计，本次新增功能不依赖且不影响上一版本各项功能的运行。
+
+效果预览：
+
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider3.gif)
+
 2019/07/06更新
 --------------
 本次更新加入了去重功能，程序可以断点续爬
