@@ -4,6 +4,8 @@
 
 效果预览：
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/database_taobao_grab_records.png)
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/database_taobao_comment.png)
 
 上手指南
 =======
@@ -146,7 +148,7 @@ removal.py用于进行重复验证，实现去重功能，在向服务器发送�
 
 更新
 ----
-此版本修复了一些BUG并已经将数据以并发的形式持久化到本地mysql
+此版本修复了一些BUG并已经将数据以异步的形式持久化到本地mysql
 
 运行前请先设置settings.py文件中的
 
