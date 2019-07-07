@@ -65,9 +65,9 @@
 
 运行程序
 -------
-1、在MySQL中执行database/create_db.sql脚本创建数据库及数据表
+第一步：在MySQL中执行database/create_db.sql脚本创建数据库及数据表
 
-2、设置爬虫
+第二步：设置爬虫
 
 第一次得到本程序时配置文件中[my_settings]部分的cookie、keyword和[db_settings]部分的passwd以及settings.py文件中尾部的MySQL相关设置均为空，需进行设置后才可正常运行本程序。
 
@@ -79,7 +79,7 @@
 
 ![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/settings_menu.png)
 
-3、修改settings.py文件尾部的MySQL设置，填写自己的数据库信息
+第三步：修改settings.py文件尾部的MySQL设置，填写自己的数据库信息
 
 说明
 ---
