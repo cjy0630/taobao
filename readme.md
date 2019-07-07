@@ -1,6 +1,8 @@
 淘宝商品评价爬虫
 ===============
 输入要爬取的商品后自动爬取相关商品评论，数据异步持久化至MySQL数据库，支持增量爬取。
+效果预览：
+![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
 
 上手指南
 -------
@@ -13,7 +15,7 @@ removal.py用于进行重复验证，实现去重功能，在向服务器发送�
 此表用于记录商品评论页
 配合新添加的模块对spiders/alcohol.py  config/config_operate.py  items.py  pipelines.py  config/settings.cfg中的代码进行了修改
 
-![image](https://github.com/cjy0630/taobao/blob/master/taobao/images/taobaoSpider.gif)
+
 
 下一版本预计功能：
 1、根据需求动态创建爬虫
